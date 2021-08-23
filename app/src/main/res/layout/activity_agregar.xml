@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/etUserId"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el UserId del usuario"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/etId"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el Id del usuario"
+            android:layout_marginBottom="5dp"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el title del usuario"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione la opcion si este fue completado V/F"
+            android:textColor="@color/black"/>
+        <CheckBox
+            android:id="@+id/cbVerdadero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="V"/>
+        <CheckBox
+            android:id="@+id/cbFalso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F"/>
+        <Button
+            android:id="@+id/btnR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
