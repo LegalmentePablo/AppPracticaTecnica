@@ -31,7 +31,7 @@ class AgregarActivity : AppCompatActivity() {
         val btnR = findViewById<Button>(R.id.btnR)
 
         btnR.setOnClickListener { verificarLlamado(); validarVF()}
-
+        //borrar
     }
 
     fun verificarLlamado(){
