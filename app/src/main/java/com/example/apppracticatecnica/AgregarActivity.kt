@@ -54,7 +54,7 @@ class AgregarActivity : AppCompatActivity() {
         var idObtenida = binding.etId.text.toString()
         for (element in datos){
             if(idObtenida == element.id.toString()) {
-                Toast.makeText(this, "Ya esta registrado", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Esta id ya esta registrada", Toast.LENGTH_SHORT).show()
                 bandera = true
                 break
             }

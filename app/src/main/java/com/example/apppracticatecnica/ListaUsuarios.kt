@@ -45,7 +45,7 @@ class ListaUsuarios : AppCompatActivity() {
         })
     }
 
-    //En proceso
+    //obtiene la lista usuaros y lo carga en el linear layout
     private fun mostrarLista(users: List<User>) {
         val recy = findViewById<RecyclerView>(R.id.recy)
         recy.apply{

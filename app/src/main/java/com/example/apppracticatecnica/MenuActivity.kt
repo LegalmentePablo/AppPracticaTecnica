@@ -3,6 +3,7 @@ package com.example.apppracticatecnica
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.EditText
 import com.example.apppracticatecnica.databinding.ActivityMenuBinding
 
 class MenuActivity : AppCompatActivity() {
@@ -32,5 +33,6 @@ class MenuActivity : AppCompatActivity() {
     fun desconectarse(){
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
+        finish()
     }
 }
