@@ -4,46 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuActivity">
+    tools:context=".MenuActivity"
+    android:background="#FFF">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:id="@+id/Mll1"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#FFF">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30dp"
             android:text="Listado de usuarios"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
         <Button
             android:id="@+id/btnList"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="ingresar"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#005bc4"
+            android:textColor="#FFF"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30dp"
             android:text="Agregar Usuarios"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
         <Button
             android:id="@+id/btnAgg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="ingresar"/>
+            android:text="ingresar"
+            android:backgroundTint="#005bc4"
+            android:textColor="#FFF"/>
         <Button
             android:id="@+id/btnDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Desconecarse"
             android:layout_gravity="center"
-            android:layout_margin="20dp"/>
+            android:layout_margin="20dp"
+            android:backgroundTint="#D60800"
+            android:textColor="#FFF"/>
 
     </LinearLayout>
 

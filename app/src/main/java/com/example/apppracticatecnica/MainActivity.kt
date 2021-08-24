@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnIngresar.setOnClickListener {control()}
     }
 
+    //Controla el inicio de sesion de que los campos esten bien digilenciados
     fun control(){
         //Accede el usuario
         if(binding.etCuenta.text.isNotEmpty() && binding.etCuenta.text.contains("@") && binding.etCuenta.text.contains(".com") && binding.etContra.text.isNotEmpty()){

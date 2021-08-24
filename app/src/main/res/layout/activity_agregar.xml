@@ -4,35 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AgregarActivity">
+    tools:context=".AgregarActivity"
+    android:background="#FFF">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center">
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="#eee">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFF"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#FFF">
         <EditText
             android:id="@+id/etUserId"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ingrese el UserId del usuario"
-            android:layout_marginBottom="5dp"/>
+            android:inputType="number"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/black"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
         <EditText
             android:id="@+id/etId"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ingrese el Id del usuario"
-            android:layout_marginBottom="5dp"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/black"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
         <EditText
             android:id="@+id/etTitle"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ingrese el title del usuario"
-            android:layout_marginBottom="10dp"/>
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/black"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="Seleccione la opcion si este fue completado V/F"
             android:textColor="@color/black"/>
         <CheckBox
@@ -40,17 +78,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="V"/>
+            android:text="V"
+            android:textColor="@color/black"/>
         <CheckBox
             android:id="@+id/cbFalso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="F"/>
+            android:layout_gravity="center"
+            android:text="F"
+            android:textColor="@color/black"/>
         <Button
             android:id="@+id/btnR"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registrar"/>
+            android:layout_gravity="center"
+            android:text="Registrar"
+            android:backgroundTint="#005bc4"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+
 
     </LinearLayout>
 

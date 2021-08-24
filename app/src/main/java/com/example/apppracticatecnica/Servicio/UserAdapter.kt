@@ -10,13 +10,13 @@ import com.example.apppracticatecnica.R
 
 class UserAdapter(private val users: List<User>):RecyclerView.Adapter<UserAdapter.ViewHolder>() {
 
-
-
+    //Crea el Viewholder en el layout user_row
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.user_row,parent,false)
         return ViewHolder(view)
     }
 
+    //Implementa el ViewHolder y carga la información de los usuarios
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val user= users[position]
         holder.userId.text = "  UserId: " + user.userId.toString()
@@ -25,10 +25,13 @@ class UserAdapter(private val users: List<User>):RecyclerView.Adapter<UserAdapte
         holder.completed.text = "  Completed: " + user.completed.toString()
     }
 
+    //Retorna el tamaño de la lista users
     override fun getItemCount(): Int {
         return users.size
     }
 
+
+    //Se conecta las val mediante la id del xml user_row
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val userId: TextView = itemView.findViewById(R.id.userId)
         val id: TextView = itemView.findViewById(R.id.id)

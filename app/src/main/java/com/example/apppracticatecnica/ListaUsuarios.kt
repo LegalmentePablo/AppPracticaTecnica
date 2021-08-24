@@ -23,27 +23,10 @@ class ListaUsuarios : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista_usuarios)
         cargarLista()
-        /*
-        val retrofit = Retrofit.Builder()
-            .baseUrl("https://jsonplaceholder.typicode.com")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-
-        val api = retrofit.create(APIService::class.java)
-        api.obtenerUsuarios().enqueue(object : Callback<List<User>>{
-            override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {
-                datos = response.body()!!
-                mostrar(response.body()!!)
-            }
-            override fun onFailure(call: Call<List<User>>, t: Throwable) {
-                d("String", "Error")
-            }
-
-        })
-         */
-
     }
 
+
+    //Accede al url, obteniendo el json y parseandolo. Ademas ejecuta el metodo mostrarLista
     fun cargarLista(){
         val retrofit = Retrofit.Builder()
             .baseUrl("https://jsonplaceholder.typicode.com")
@@ -53,7 +36,7 @@ class ListaUsuarios : AppCompatActivity() {
         val api = retrofit.create(APIService::class.java)
         api.obtenerUsuarios().enqueue(object : Callback<List<User>>{
             override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {
-                mostrar(response.body()!!)
+                mostrarLista(response.body()!!)
             }
             override fun onFailure(call: Call<List<User>>, t: Throwable) {
                 d("String", "Error")
@@ -62,7 +45,8 @@ class ListaUsuarios : AppCompatActivity() {
         })
     }
 
-    private fun mostrar(users: List<User>) {
+    //En proceso
+    private fun mostrarLista(users: List<User>) {
         val recy = findViewById<RecyclerView>(R.id.recy)
         recy.apply{
             layoutManager = LinearLayoutManager(this@ListaUsuarios)
